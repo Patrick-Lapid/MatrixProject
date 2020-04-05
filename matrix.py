@@ -19,7 +19,7 @@ def main():
     while m1:
         firstMatrix.append(rowResponse)
         rowResponse = input("Enter next row of matrix: ")
-        if len(firstMatrix[0]) == len(rowResponse):
+        if len(firstMatrix[0]) == len(rowResponse) and "quit" not in firstMatrix:
             rowResponse = list(rowResponse)
         else:
             m1 = False
@@ -29,7 +29,7 @@ def main():
     while m2:
         secondMatrix.append(rowResponse)
         rowResponse = input("Enter next row of matrix: ")
-        if len(secondMatrix[0]) == len(rowResponse):
+        if len(secondMatrix[0]) == len(rowResponse) and 'quit' not in secondMatrix:
             rowResponse = list(rowResponse)
         else:
             m2 = False
